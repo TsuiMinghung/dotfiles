@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+PS1="[\u@ \W \$?]$ "
 
 source /home/alex/.config/broot/launcher/bash/br
 source /etc/profile.d/autojump.bash
@@ -14,8 +14,10 @@ source ~/study/missing-semester/lab2/mcd.sh
 export EDITOR=/usr/bin/vim
 
 # save a lot of typing for common commands
-alias gs='git status'
-alias gc='git commit'
+alias gits='git status'
+alias gitc='git commit'
+alias gita='git add'
+alias gitp='git push'
 alias chrome='google-chrome-stable'
 alias cloud-music='netease-cloud-music'
 alias wechat='wechat-uos'
@@ -23,6 +25,7 @@ alias ...='cd ../..'
 
 # save you from mistypeing
 alias sl='ls'
+alias clera='clear'
 
 # overwrite existing commands for better defaults
 alias ls='ls --color=auto'
