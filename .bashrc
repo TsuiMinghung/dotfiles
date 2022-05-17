@@ -13,13 +13,22 @@ source ~/study/missing-semester/lab2/mcd.sh
 
 export EDITOR=/usr/bin/vim
 
+# save a lot of typing for common commands
 alias gs='git status'
-alias ls='ls --color=auto'
+alias gc='git commit'
 alias chrome='google-chrome-stable'
 alias cloud-music='netease-cloud-music'
 alias wechat='wechat-uos'
-alias mv='mv -i'
 alias ...='cd ../..'
+
+# save you from mistypeing
+alias sl='ls'
+
+# overwrite existing commands for better defaults
+alias ls='ls --color=auto'
+alias mv='mv -i'
+alias mkdir='mkdir -p'
+alias df='df -h'
 
 set -u
 HISTCONTROL=ignorespace
