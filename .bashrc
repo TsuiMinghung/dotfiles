@@ -15,12 +15,18 @@ export EDITOR=/usr/bin/vim
 
 # save a lot of typing for common commands
 alias gits='git status'
-alias gitc='git commit'
+alias gitc='git checkout'
 alias gita='git add'
 alias gitp='git push'
+alias gitl='git log --all --graph --decorate'
+alias gitm='git merge'
+alias gitb='git branch'
+alias gitd='git diff'
+
 alias chrome='google-chrome-stable'
 alias cloud-music='netease-cloud-music'
 alias wechat='wechat-uos'
+
 alias ...='cd ../..'
 
 # save you from mistypeing
